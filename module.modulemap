@@ -1,0 +1,6 @@
+module SwiftImageMagick [system] {
+  header "/usr/local/Cellar/imagemagick@6/6.9.12-17/include/ImageMagick-6/wand/MagickWand.h"
+  link "MagickWand-6.Q16"
+  link "MagickCore-6.Q16"
+  export *
+}
