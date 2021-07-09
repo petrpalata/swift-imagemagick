@@ -6,9 +6,10 @@ import PackageDescription
 let package = Package(
   name: "SwiftImageMagick",
   products: [
-  .library(name: "SwiftImageMagick", targets: ["magick"])
+  .library(name: "SwiftImageMagickLib", targets: ["SwiftImageMagickLibTarget"])
   ],
   targets: [
+    .target(name: "SwiftImageMagickLibTarget", dependencies: ["magick"]),
     .systemLibrary(name: "magick", pkgConfig: "ImageMagick")
   ]
 )
