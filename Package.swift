@@ -9,6 +9,6 @@ let package = Package(
     .library(name: "SwiftImageMagick", targets: ["SwiftImageMagick"]),
   ],
   targets: [
-    .systemLibrary(name: "SwiftImageMagick", pkgConfig: "ImageMagick"),
+    .systemLibrary(name: "SwiftImageMagick", pkgConfig: "ImageMagick")
   ]
 )

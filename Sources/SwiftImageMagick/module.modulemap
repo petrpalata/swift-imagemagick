@@ -1,4 +1,4 @@
-module SwiftImageMagick {
+module SwiftImageMagick [system] {
   header "../../Headers/SwiftImageMagick-Bridging-Header.h"
   link "MagickWand-6.Q16"
   link "MagickCore-6.Q16"
