@@ -6,10 +6,12 @@ import PackageDescription
 let package = Package(
   name: "swift-imagemagick",
   products: [
-    .library(name: "SwiftImageMagick", targets: ["SwiftImageMagickExports"])
+    .library(name: "SwiftImageMagick", targets: ["SwiftImageMagick"])
   ],
   targets: [
       .systemLibrary(name: "CImageMagick", pkgConfig: "ImageMagick"),
-      .target(name: "SwiftImageMagickExports", dependencies: ["CImageMagick"])
+      .target(name: "SwiftImageMagick", dependencies: [
+      .target(name: "CImageMagick")
+      ])
   ]
 )
