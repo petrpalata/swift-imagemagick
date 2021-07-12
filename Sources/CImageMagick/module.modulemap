@@ -1,0 +1,6 @@
+module CImageMagick [system] {
+  header "cimagemagick.h"
+  link "MagickWand-6.Q16"
+  link "MagickCore-6.Q16"
+  export *
+}
